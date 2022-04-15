@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ movie.title }} - Details{% endblock %}
+
+{% block body %}
+<h1>{{ movie.title }}</h1>
+
+<p>
+  {{ movie.overview }}
+</p>
+
+{% if session['user_id'] %}
+
+
+
+{% endif %}
+
+<img src="{{ movie.poster_path }}">
+{% endblock %}
